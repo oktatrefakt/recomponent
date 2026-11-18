@@ -11,6 +11,8 @@
 //Mindig használjuk a package-t!
 package com.example;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 /* Három osztályra van szükség: */
 import java.io.FileWriter;
 import java.io.IOException;
@@ -25,6 +27,7 @@ public class Main {
 
     //Main metódus
     public static void main(String[] args) {
+        /* A következő sorokat fejlécként mindenképpen ki kell írni */
         System.out.println("Alkatrészek tárolása");
         System.out.println("====================");
         System.out.println("Sallai András, 2026-11-18");
@@ -86,6 +89,26 @@ public class Main {
             System.out.println("Hiba a fájl írásakor!");
         }/* A try-catch zárja az IOException kezelést */
         
-
+        k();
     }/* Main metódus vége */
+
+    public static void k() {
+        try {
+        File file = new File(FILE_NAME);
+        Scanner s = new Scanner(file);
+        System.out.print("Alkaterészek: ");
+        int t = 0;
+        while(s.hasNext()){
+    String b = s.nextLine();
+            System.out.println(b);
+            t++;
+        }
+        System.out.println("Összesen: " + t + " db");
+    
+        } catch (FileNotFoundException e) {
+            System.out.println("Hiba a fájl olvasásakor!");
+        }
+
+
+    }
 }

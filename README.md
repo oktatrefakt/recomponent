@@ -20,3 +20,5 @@ A prgram be kell kérje egy alkatrész adatait:
 
 Ezután a program írja ki a képernyőre és fájlba az alkatrész adatait.
 Tájékoztasson a fájlbaírás sikeréről.
+
+A program a futés végén írja ki, hogy hány alkatrész van a fájlban.
