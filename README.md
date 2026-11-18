@@ -1,4 +1,4 @@
-# Component
+# reComponent
 
 ## Leírás
 
@@ -6,7 +6,9 @@ Ez egy alkatrész nyilvántartó alkalmazás.
 
 ## Feladat
 
-Refaktorálja a tiszta kód elveinek megfelelően!
+* Refaktorálja a tiszta kód elveinek megfelelően!
+* A refaktorálás során nevezze át a refaktorált projektet.
+* Az új alkalmazásban jelenítse meg, mi volt az eredeti és ki gyártotta.
 
 ## Mit kell tudnia a programnak?
 
