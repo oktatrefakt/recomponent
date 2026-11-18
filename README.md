@@ -10,6 +10,14 @@ Ez egy alkatrész nyilvántartó alkalmazás.
 * A refaktorálás során nevezze át a refaktorált projektet.
 * Az új alkalmazásban jelenítse meg, mi volt az eredeti és ki gyártotta.
 
+Ügyeljen a következőkre:
+* Elnevezések
+* Megjegyzések
+* Behúzások
+* Egy felelősség elve
+* Metódusok mérete
+* Kivételek kezelése
+
 ## Mit kell tudnia a programnak?
 
 A prgram be kell kérje egy alkatrész adatait:

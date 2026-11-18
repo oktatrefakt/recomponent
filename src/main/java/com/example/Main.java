@@ -4,7 +4,7 @@
 * Copyright: 2026, Sallai András
 * Group: szit.hu
 * Date: 2026-11-18
-* Github: https://github.com/oktatrefakt/component
+* Github: https://github.com/oktatrefakt/recomponent
 * Licenc: MIT
 */
 
@@ -80,13 +80,13 @@ public class Main {
         int keszletecske = s.nextInt();
 
         //Itt kezdődik a fájlírása
-        try {
-            //Todo: Hozzáfűzésmódot be kell állítani
-            FileWriter f = new FileWriter(FILE_NAME);
-            f.write(cikkszam + ";" + a + ";" + ar + ";" + keszletecske + "\n");
-            f.close();
-        } catch (IOException e) {
-            System.out.println("Hiba a fájl írásakor!");
+try {
+//Todo: Hozzáfűzésmódot be kell állítani
+FileWriter f = new FileWriter(FILE_NAME);
+f.write(cikkszam + ";" + a + ";" + ar + ";" + keszletecske + "\n");
+f.close();
+} catch (IOException e) {
+System.out.println("Hiba a fájl írásakor!");
         }/* A try-catch zárja az IOException kezelést */
         
         k();
@@ -100,15 +100,13 @@ public class Main {
         int t = 0;
         while(s.hasNext()){
     String b = s.nextLine();
-            System.out.println(b);
-            t++;
+    System.out.println(b);
+    t++;
         }
         System.out.println("Összesen: " + t + " db");
     
         } catch (FileNotFoundException e) {
             System.out.println("Hiba a fájl olvasásakor!");
         }
-
-
     }
 }
