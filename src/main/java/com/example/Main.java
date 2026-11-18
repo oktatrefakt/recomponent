@@ -68,15 +68,15 @@ public class Main {
         String cikkszam = s.nextLine();
 
         //Bekérjük a nevet (ez 2 sor)
-        System.out.println("Név: ");
+        System.out.print("Név: ");
         String a = s.nextLine();
 
         //Bekérjük az árat:
-        System.out.println("Ár: ");
+        System.out.print("Ár: ");
         int ar = s.nextInt();
 
         //Mennyi alkatrész van raktáron?
-        System.out.println("Készlet: ");
+        System.out.print("Készlet: ");
         int keszletecske = s.nextInt();
 
         //Itt kezdődik a fájlírása
@@ -90,6 +90,7 @@ System.out.println("Hiba a fájl írásakor!");
         }/* A try-catch zárja az IOException kezelést */
         
         k();
+        ir.ki();
     }/* Main metódus vége */
 
     public static void k() {
